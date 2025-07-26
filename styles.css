@@ -1,3 +1,54 @@
+/* Pure CSS Snow Particles (stronger, still lightweight) */
+.css-snow {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  overflow: hidden;
+}
+.css-snowflake {
+  position: absolute;
+  top: -2rem;
+  color: #fff;
+  opacity: 0.7;
+  user-select: none;
+  animation: css-snow-fall 7s linear infinite;
+}
+.css-snowflake:nth-child(1) { left: 3vw; animation-delay: 0s; font-size: 1.1rem; animation-duration: 7s; }
+.css-snowflake:nth-child(2) { left: 8vw; animation-delay: 2s; font-size: 1.3rem; animation-duration: 8s; }
+.css-snowflake:nth-child(3) { left: 13vw; animation-delay: 4s; font-size: 1.1rem; animation-duration: 7.5s; }
+.css-snowflake:nth-child(4) { left: 18vw; animation-delay: 1s; font-size: 1.4rem; animation-duration: 8.5s; }
+.css-snowflake:nth-child(5) { left: 23vw; animation-delay: 3s; font-size: 1.2rem; animation-duration: 7.2s; }
+.css-snowflake:nth-child(6) { left: 28vw; animation-delay: 5s; font-size: 1.1rem; animation-duration: 8.2s; }
+.css-snowflake:nth-child(7) { left: 33vw; animation-delay: 2.5s; font-size: 1.3rem; animation-duration: 7.8s; }
+.css-snowflake:nth-child(8) { left: 38vw; animation-delay: 1.5s; font-size: 1.2rem; animation-duration: 8.1s; }
+.css-snowflake:nth-child(9) { left: 43vw; animation-delay: 3.5s; font-size: 1.1rem; animation-duration: 7.3s; }
+.css-snowflake:nth-child(10) { left: 48vw; animation-delay: 0.5s; font-size: 1.3rem; animation-duration: 8.3s; }
+.css-snowflake:nth-child(11) { left: 53vw; animation-delay: 1.2s; font-size: 1.2rem; animation-duration: 7.7s; }
+.css-snowflake:nth-child(12) { left: 58vw; animation-delay: 2.8s; font-size: 1.1rem; animation-duration: 8.4s; }
+.css-snowflake:nth-child(13) { left: 63vw; animation-delay: 4.1s; font-size: 1.4rem; animation-duration: 7.6s; }
+.css-snowflake:nth-child(14) { left: 68vw; animation-delay: 0.9s; font-size: 1.2rem; animation-duration: 8.2s; }
+.css-snowflake:nth-child(15) { left: 73vw; animation-delay: 3.3s; font-size: 1.1rem; animation-duration: 7.9s; }
+.css-snowflake:nth-child(16) { left: 78vw; animation-delay: 2.2s; font-size: 1.3rem; animation-duration: 8.1s; }
+.css-snowflake:nth-child(17) { left: 83vw; animation-delay: 1.7s; font-size: 1.2rem; animation-duration: 7.4s; }
+.css-snowflake:nth-child(18) { left: 88vw; animation-delay: 3.8s; font-size: 1.1rem; animation-duration: 8.5s; }
+
+@keyframes css-snow-fall {
+  0% {
+    transform: translateY(0) scale(1) rotate(0deg);
+    opacity: 0.7;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(100vh) scale(0.9) rotate(60deg);
+    opacity: 0.2;
+  }
+}
 /* CSS Custom Properties for Theming */
 :root {
   /* Dark Theme (Primary) */
