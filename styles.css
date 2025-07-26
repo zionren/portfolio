@@ -1478,11 +1478,19 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    justify-items: center;
+  }
+  
+  .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   
   .image-placeholder {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 0 auto;
   }
   
