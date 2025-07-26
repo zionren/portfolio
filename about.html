@@ -1,0 +1,225 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-container">
+        <div class="snow-particles" id="snowParticles"></div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fas fa-snowflake"></i>
+                <span>Portfolio</span>
+            </div>
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+        
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link" data-page="home">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="about.html" class="nav-link active" data-page="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="portfolio.html" class="nav-link" data-page="portfolio">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Portfolio</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="skills.html" class="nav-link" data-page="skills">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="contact.html" class="nav-link" data-page="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-navbar">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-container">
+            <div class="page-header">
+                <h1 class="page-title">About Me</h1>
+                <p class="page-subtitle">Get to know the person behind the code</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="profile-section">
+                        <div class="profile-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-user"></i>
+                                <p>Your Photo Here</p>
+                            </div>
+                        </div>
+                        <div class="profile-info">
+                            <h2>Hello, I'm [Your Name]</h2>
+                            <p class="role">Full Stack Developer & Designer</p>
+                            <p class="bio">
+                                I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. 
+                                With a background in both frontend and backend development, I enjoy bringing ideas to life through clean, 
+                                efficient code and thoughtful design.
+                            </p>
+                            <div class="resume-download">
+                                <a href="assets/resume.pdf" download class="btn btn-primary">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download Resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-details">
+                    <div class="detail-section">
+                        <h3><i class="fas fa-briefcase"></i> Experience</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Senior Developer</h4>
+                                    <p class="company">Tech Company • 2022 - Present</p>
+                                    <p>Led development of scalable web applications and mentored junior developers.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Frontend Developer</h4>
+                                    <p class="company">Digital Agency • 2020 - 2022</p>
+                                    <p>Created responsive web interfaces and improved user experience across multiple projects.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <h4>Junior Developer</h4>
+                                    <p class="company">Startup Inc. • 2019 - 2020</p>
+                                    <p>Gained hands-on experience in full-stack development and agile methodologies.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                        <div class="education-item">
+                            <h4>Bachelor of Computer Science</h4>
+                            <p class="school">University Name • 2015 - 2019</p>
+                            <p>Focused on software engineering, algorithms, and data structures.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-heart"></i> Interests</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <i class="fas fa-code"></i>
+                                <span>Coding</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <span>Design</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-camera"></i>
+                                <span>Photography</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-music"></i>
+                                <span>Music</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-book"></i>
+                                <span>Reading</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-hiking"></i>
+                                <span>Hiking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3><i class="fas fa-rings-wedding"></i> Personal Life</h3>
+                        <div class="personal-info">
+                            <div class="relationship-status">
+                                <h4>Relationship Status</h4>
+                                <p class="status-info">
+                                    <i class="fas fa-heart text-red"></i>
+                                    <span>In a loving relationship with [Partner's Name]</span>
+                                </p>
+                                <p class="relationship-description">
+                                    We've been together for [duration] and share a passion for [shared interests/activities]. 
+                                    [Partner's Name] brings joy and balance to my life, supporting my career goals while we explore 
+                                    new adventures together.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
