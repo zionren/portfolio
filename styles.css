@@ -1414,6 +1414,9 @@ body {
     gap: 2rem;
     text-align: center;
     padding: 2rem 0;
+    justify-items: center;
+    align-items: center;
+    transform: translateY(-80px);
   }
   
   .hero-title {
@@ -1439,7 +1442,19 @@ body {
   }
   
   .hero-visual {
-    margin-top: 2rem;
+    margin-top: 0;
+    order: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
   }
   
   .snow-globe {
