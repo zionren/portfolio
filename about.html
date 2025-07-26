@@ -4,11 +4,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - About</title>
+    <title>About Me</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .detail-section {
+            margin-bottom: 1.65rem !important;
+        }
+        .detail-section:last-child {
+            margin-bottom: 0 !important;
+        }
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+        }
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 1rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--bg-secondary);
+            border: 3px solid var(--border-color);
+            margin-top: 11px;
+        }
+    </style>
 </head>
 <body>
     <!-- Background Elements -->
@@ -21,7 +47,7 @@
         <div class="sidebar-header">
             <div class="logo">
                 <i class="fas fa-snowflake"></i>
-                <span>Portfolio</span>
+                <span>Good day, visitor!</span>
             </div>
             <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
                 <i class="fas fa-chevron-left"></i>
@@ -97,26 +123,23 @@
     <main class="main-content">
         <div class="page-container">
             <div class="page-header">
-                <h1 class="page-title">About Me</h1>
-                <p class="page-subtitle">Get to know the person behind the code</p>
+                <h1 class="page-title">Who am I?</h1>
             </div>
 
             <div class="about-content">
                 <div class="about-intro">
                     <div class="profile-section">
                         <div class="profile-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-user"></i>
-                                <p>Your Photo Here</p>
-                            </div>
-                        </div>
+                            <img src="pfp.jpg" alt="Adriaan M. Dimate Profile Photo" class="profile-photo">   </div>
                         <div class="profile-info">
-                            <h2>Hello, I'm [Your Name]</h2>
-                            <p class="role">Full Stack Developer & Designer</p>
+                            <h2>Hello, I'm Adriaan M. Dimate</h2>
+                            <p class="role">Full Stack Developer & Future Airline Captain</p>
                             <p class="bio">
-                                I'm a passionate developer with a love for creating beautiful, functional, and user-centered digital experiences. 
-                                With a background in both frontend and backend development, I enjoy bringing ideas to life through clean, 
+                                I'm an autistic developer with a love for creating beautiful, functional, and user-centered digital experiences.
+                                With a background in both frontend and backend development, I enjoy bringing ideas to life through clean,
                                 efficient code and thoughtful design.
+                                I also am aiming to become an airline captain, combining my passion for aviation with my technical skills,
+                                combined with my passion for flying and travelling, ensuring a smooth, pleasant, and lovely experience for users and passengers.
                             </p>
                             <div class="resume-download">
                                 <a href="assets/resume.pdf" download class="btn btn-primary">
@@ -135,25 +158,17 @@
                             <div class="timeline-item">
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <h4>Senior Developer</h4>
-                                    <p class="company">Tech Company • 2022 - Present</p>
-                                    <p>Led development of scalable web applications and mentored junior developers.</p>
+                                    <h4>Data Encoder & Macro Programmer | Internship</h4>
+                                    <p class="company">ACE Medical Centre - Baypointe • 2025 - 2025</p>
+                                    <p>Interned about encoding patient data and created macros to improve encoding efficiency.</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
                                 <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <h4>Frontend Developer</h4>
-                                    <p class="company">Digital Agency • 2020 - 2022</p>
+                                    <h4>Data Encoder & Bookkeeper</h4>
+                                    <p class="company">TDA Car Rental • 2023 - Present</p>
                                     <p>Created responsive web interfaces and improved user experience across multiple projects.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-marker"></div>
-                                <div class="timeline-content">
-                                    <h4>Junior Developer</h4>
-                                    <p class="company">Startup Inc. • 2019 - 2020</p>
-                                    <p>Gained hands-on experience in full-stack development and agile methodologies.</p>
                                 </div>
                             </div>
                         </div>
@@ -162,9 +177,32 @@
                     <div class="detail-section">
                         <h3><i class="fas fa-graduation-cap"></i> Education</h3>
                         <div class="education-item">
-                            <h4>Bachelor of Computer Science</h4>
-                            <p class="school">University Name • 2015 - 2019</p>
+                            <h4>Bachelor of Science in Computer Science</h4>
+                            <p class="school">Gordon College • 2023 - Present</p>
                             <p>Focused on software engineering, algorithms, and data structures.</p>
+                        </div>
+                        <br>
+                        <div class="education-item">
+                            <h4>Bachelor of Science in Air Transportation (future)</h4>
+                            <p class="school">(unknown) • 2029 - 2034 (tentative)</p>
+                            <p>Focuses on flying and maintaining planes.</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-section">
+                        <h3>💍 Relationship Status</h3>
+                        <div class="personal-info">
+                            <div class="relationship-status">
+                                <p class="status-info">
+                                    <h4><b>Engaged</b> with Mary Chan Soberano, LPT</h4></span>
+                                </p>
+                                <br>
+<p class="relationship-description">
+    We've been together for <span id="daysTogether"></span> days and share a passion for travelling. 
+    Mary Chan brings joy and balance to my life, supporting my career goals while we explore 
+    new adventures together.
+</p>
+                            </div>
                         </div>
                     </div>
 
@@ -176,8 +214,8 @@
                                 <span>Coding</span>
                             </div>
                             <div class="interest-item">
-                                <i class="fas fa-paint-brush"></i>
-                                <span>Design</span>
+                                <i class="fas fa-plane"></i>
+                                <span>Travelling</span>
                             </div>
                             <div class="interest-item">
                                 <i class="fas fa-camera"></i>
@@ -192,29 +230,13 @@
                                 <span>Reading</span>
                             </div>
                             <div class="interest-item">
-                                <i class="fas fa-hiking"></i>
-                                <span>Hiking</span>
+                                <i class="fas fa-bed"></i>
+                                <span>Sleeping</span>
                             </div>
                         </div>
                     </div>
 
-                    <div class="detail-section">
-                        <h3><i class="fas fa-rings-wedding"></i> Personal Life</h3>
-                        <div class="personal-info">
-                            <div class="relationship-status">
-                                <h4>Relationship Status</h4>
-                                <p class="status-info">
-                                    <i class="fas fa-heart text-red"></i>
-                                    <span>In a loving relationship with [Partner's Name]</span>
-                                </p>
-                                <p class="relationship-description">
-                                    We've been together for [duration] and share a passion for [shared interests/activities]. 
-                                    [Partner's Name] brings joy and balance to my life, supporting my career goals while we explore 
-                                    new adventures together.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
