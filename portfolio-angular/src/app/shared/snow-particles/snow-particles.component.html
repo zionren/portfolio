@@ -1,0 +1,8 @@
+<!-- CSS Snow Animation -->
+<div class="css-snow">
+  <span class="css-snowflake" *ngFor="let i of snowflakes; index as idx" 
+        [style.left]="getSnowflakePosition(idx)"
+        [style.animation-delay]="getSnowflakeDelay(idx)"
+        [style.animation-duration]="getSnowflakeDuration(idx)"
+        [style.font-size]="getSnowflakeSize(idx)">❄</span>
+</div>
