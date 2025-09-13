@@ -9,7 +9,7 @@ const Home = () => {
           <div className="hero-text">
             <h1 className="hero-title">
               <span className="title-line">Welcome to my</span>
-              <span className="title-line gradient-text">Sacred Life!</span>
+              <span className="title-line gradient-text">Winterous Life!</span>
             </h1>
             <p className="hero-description">
               A developer and programmer with a passion for flying and coding solutions. 
