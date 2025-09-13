@@ -23,13 +23,6 @@ const Sidebar = () => {
           <i className="fas fa-snowflake"></i>
           <span>Good day, visitor!</span>
         </div>
-        <button 
-          className="sidebar-toggle" 
-          onClick={toggleSidebar}
-          aria-label="Toggle sidebar"
-        >
-          <i className={`fas fa-chevron-left ${isCollapsed ? 'rotated' : ''}`}></i>
-        </button>
       </div>
       
       <ul className="nav-menu">

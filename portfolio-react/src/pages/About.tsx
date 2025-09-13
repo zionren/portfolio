@@ -58,6 +58,51 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        <div className="detail-section">
+          <h3><i className="fas fa-graduation-cap"></i> Education</h3>
+          <div className="education-item">
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p className="school">Gordon College • 2023 - Present</p>
+            <p>Focused on software engineering, algorithms, and data structures.</p>
+          </div>
+          <br />
+          <div className="education-item">
+            <h4>Bachelor of Science in Air Transportation (future)</h4>
+            <p className="school">(unknown) • 2029 - 2034 (tentative)</p>
+            <p>Focuses on flying and maintaining planes.</p>
+          </div>
+        </div>
+
+        <div className="detail-section">
+          <h3><i className="fas fa-heart"></i> Interests</h3>
+          <div className="interests-grid">
+            <div className="interest-item">
+              <i className="fas fa-code"></i>
+              <span>Coding</span>
+            </div>
+            <div className="interest-item">
+              <i className="fas fa-plane"></i>
+              <span>Travelling</span>
+            </div>
+            <div className="interest-item">
+              <i className="fas fa-camera"></i>
+              <span>Photography</span>
+            </div>
+            <div className="interest-item">
+              <i className="fas fa-music"></i>
+              <span>Music</span>
+            </div>
+            <div className="interest-item">
+              <i className="fas fa-book"></i>
+              <span>Reading</span>
+            </div>
+            <div className="interest-item">
+              <i className="fas fa-bed"></i>
+              <span>Sleeping</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   )
