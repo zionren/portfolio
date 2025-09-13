@@ -55,7 +55,9 @@ const Skills = () => {
     <div className="page-container">
       <div className="page-header">
         <h1 className="page-title">Skills</h1>
-        <p>Technologies and expertise rated on a 5-star system</p>
+        <p>Technologies and expertise rated on a 5-star system
+          WARNING: RATINGS ARE SUBJECT TO CHANGE, THESE ARE JUST PLACEHOLDERS!
+        </p>
       </div>
       
       <div className="skills-content">
